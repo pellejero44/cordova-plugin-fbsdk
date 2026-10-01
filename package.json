@@ -1,16 +1,33 @@
 {
-  "name": "cordova-plugin-fbsdk-repo",
-  "private": true,
-  "description": "Repository tooling only. The published package is in plugin/.",
-  "scripts": {
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "test:ios": "cordova-paramedic --platform ios@latest --plugin \"./plugin --variable APP_ID=431082375696800 --variable APP_NAME=FbsdkTests --variable CLIENT_TOKEN=abcd1234\" --ci --verbose --cleanUpAfterRun",
-    "test:android": "cordova-paramedic --platform android@latest --plugin \"./plugin --variable APP_ID=431082375696800 --variable APP_NAME=FbsdkTests --variable CLIENT_TOKEN=abcd1234\" --ci --verbose --cleanUpAfterRun"
+  "name": "cordova-plugin-fbsdk",
+  "version": "5.0.0",
+  "description": "Cordova Facebook SDK Plugin",
+  "cordova": {
+    "id": "cordova-plugin-fbsdk",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
   },
-  "devDependencies": {
-    "cordova": "13.0.0",
-    "cordova-paramedic": "git+https://github.com/MaximBelov/cordova-paramedic.git#cc42e34e204cc15971ec842deae62b3d70871d7b",
-    "prettier": "3.6.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximBelov/cordova-plugin-fbsdk.git"
+  },
+  "homepage": "https://github.com/MaximBelov/cordova-plugin-fbsdk#readme",
+  "bugs": {
+    "url": "https://github.com/MaximBelov/cordova-plugin-fbsdk/issues"
+  },
+  "keywords": [
+    "cordova",
+    "facebook",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser",
+    "facebook-sdk",
+    "social",
+    "sharing"
+  ],
+  "license": "Apache-2.0"
 }
